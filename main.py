@@ -152,3 +152,5 @@ async def chat_completions(request: RouterRequest) -> RouterResponse:
 async def health_check():
     """Einfacher Healthcheck-Endpunkt für Container/Monitoring."""
     return {"status": "ok", "service": "llm-router"}
+
+# Testkommentar für GitHub-Auther-Mail
