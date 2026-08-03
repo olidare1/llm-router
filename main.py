@@ -79,15 +79,15 @@ async def call_heavy_model(prompt: str) -> str:
 
 
 # ==============================================================================
-# 4. DIE CORE ROUTING-LOGIK
+# 4. DIE CORE ROUTING-LOGIK / MUSS NOCH GEUPDATED WERDEN!!!
 # ==============================================================================
 def route_prompt(prompt: str) -> ModelType:
     """
     Entscheidet basierend auf Prompt-Eigenschaften, welches Modell verwendet werden soll.
     
     Regel:
-    - Wenn der Prompt kürzer als 50 Zeichen ist ODER das Wort "zusammenfassen" enthält:
-      -> Route zum "Fast Model"
+    - Wenn der Prompt kürzer als 50 Zeichen ist ODER das Wort "zusammenfassen" enthält: 
+      -> Route zum "Fast Model"  
     - Ansonsten:
       -> Route zum "Heavy Model"
     """
